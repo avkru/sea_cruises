@@ -1,3 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="5" viewBox="0 0 8 5">
-  <image id="Многоугольник_1_копия_2" data-name="Многоугольник 1 копия 2" width="8" height="5" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAATklEQVQImW3MwQ1AQABE0UdcVaMSiQ7cUNLWg0bQw17IJivZw87xz59p+mEMmNUTWiw4K/2BNQkRE56ivDOLSUi5flAMkqQrVjs2vPkefMSvEGR43g6YAAAAAElFTkSuQmCC"/>
+<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="8" height="5" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_0_1" transform="scale(0.125 0.2)"/>
+</pattern>
+<image id="image0_0_1" width="8" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAATklEQVQImW3MwQ1AQABE0UdcVaMSiQ7cUNLWg0bQw17IJivZw87xz59p+mEMmNUTWiw4K/2BNQkRE56ivDOLSUi5flAMkqQrVjs2vPkefMSvEGR43g6YAAAAAElFTkSuQmCC"/>
+</defs>
 </svg>

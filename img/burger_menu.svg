@@ -1,3 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="16" viewBox="0 0 22 16">
-  <image id="меню" width="22" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAAAQklEQVQ4jWPkNQ78z0ADwMLAwFBBK4M7aWEwEy0MHTUYBYAibxWtDFailcEmtDB4NLnR3mBQ5JXTyuAOqpvKwMAAAKW/BL68xJLMAAAAAElFTkSuQmCC"/>
+<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="22" height="16" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_0_1" transform="scale(0.0454545 0.0625)"/>
+</pattern>
+<image id="image0_0_1" width="22" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAAAQklEQVQ4jWPkNQ78z0ADwMLAwFBBK4M7aWEwEy0MHTUYBYAibxWtDFailcEmtDB4NLnR3mBQ5JXTyuAOqpvKwMAAAKW/BL68xJLMAAAAAElFTkSuQmCC"/>
+</defs>
 </svg>
