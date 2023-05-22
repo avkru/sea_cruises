@@ -9,6 +9,62 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    
+    <header class="header">
+      <nav class="main-menu">
+        <button class="main-menu-btn" id="btn-toggle">
+          <span class="visually-hidden" id="btn-text">Открыть главное меню</span>
+        </button>
+        <ul class="main-menu-list list-hidden" id="main-menu">
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">Популярные маршруты</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">Расписание рейсов</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">Забронированные рейсы</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">Вход для партнеров</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">О компании</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-list">
+        <li class="header-item">
+          <button class="login">Личный кабинет</button>
+        </li>
+        <li class="header-item">
+          <select class="currency">
+            <option value="ruble">Рубль</option>
+            <option value="dollar">Доллар</option>
+            <option value="euro">Евро</option>
+          </select>
+        </li>
+        <li class="header-item">
+          <select class="lang">
+            <option value="ru">Ru</option>
+            <option value="eng">Eng</option>
+          </select>
+        </li>
+        <li class="header-item support">
+          <b>8 800 500-61-05</b><br>
+          <span>Круглосуточная поддержка</span>
+        </li>
+      </ul>
+      <a class="logo" href="index.html">
+        <img src="files/logo.svg" alt="Логотип компании">
+      </a>
+      <h1>Морские прогулки<br><span class="black-sea">по чёрному морю</span></h1>
+      <button class="btn-cruise-select">Выбрать круиз</button>
+      <div class="line"></div>
+    </header>
+
+    <script src="js/show-hide-menu.js"></script>
   </body>
 </html>
