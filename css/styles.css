@@ -1,2 +1,12 @@
 @charset "utf-8";
 
+.list-hidden {
+  display: none;
+}
+
+/*
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+*/
