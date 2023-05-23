@@ -37,7 +37,7 @@
       </nav>
       <ul class="header-list">
         <li class="header-item">
-          <button class="login">Личный кабинет</button>
+          <button class="login" type="button">Личный кабинет</button>
         </li>
         <li class="header-item">
           <select class="currency">
@@ -61,9 +61,76 @@
         <img src="files/logo.svg" alt="Логотип компании">
       </a>
       <h1>Морские прогулки<br><span class="black-sea">по чёрному морю</span></h1>
-      <button class="btn-cruise-select">Выбрать круиз</button>
+      <a class="cruise-select" href="#">Выбрать круиз</a>
       <div class="line"></div>
     </header>
+
+    <main class="container">
+      <section class="catalog">
+        <h2>Каталог круизов</h2>
+        <select name="cruises">
+          <option value="default">Сортировать по умолчанию</option>
+          <option value="price" selected>Сортировать круизы по цене</option>
+          <option value="popular">Сортировать по популярности</option>
+        </select>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <figure>
+              <img src="files/catalog_anapa.jpg" alt="Круиз в Анапу">
+              <div class="promo">Хит продаж</div>
+              <figcaption>
+                <a class="catalog-link" href="#">Морской круиз в Анапу</a>
+                <p class="catalog-description">Маршрут: Сочи-Лазаревское-Геленджик-Анапа<br> Продолжительность: 10 ч. 0 мин.</p>
+                <p class="catalog-price">49 000 руб.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="catalog-item">
+            <figure>
+              <img src="files/catalog_sochi.jpg" alt="Прогулка Сочи-Адлер-Сочи">
+              <div class="promo">Акция</div>
+              <figcaption>
+                <a class="catalog-link" href="#">Обзорная морская прогулка с экскурсией</a>
+                <p class="catalog-description">Маршрут: Сочи-Адлер-Сочи (без высадки)<br> Продолжительность: 1 ч. 0 мин.</p>
+                <p class="catalog-price">5 000 руб. <del>15000 руб.</del></p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="catalog-item">
+            <figure>
+              <img src="files/catalog_gelendzhik.jpg" alt="Прогулка в Геленджик">
+              <div class="promo">Скидка 10%</div>
+              <figcaption>
+                <a class="catalog-link" href="#">Морская прогулка в Геленджик</a>
+                <p class="catalog-description">Маршрут: Сочи-Туапсе-Геленджик<br> Продолжительность: 12 ч. 30 мин.</p>
+                <p class="catalog-price">7 000 руб. <del>10000 руб.</del></p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="catalog-item">
+            <figure>
+              <img src="files/catalog_novorossiysk.jpg" alt="Круиз в Новороссийск">
+              <figcaption>
+                <a class="catalog-link" href="#">Морской круиз в Новороссийск</a>
+                <p class="catalog-description">Маршрут: Сочи-Геленджик-Новороссйиск-Геленджик-Сочи<br> Продолжительность 13 ч. 0 мин.</p>
+                <p class="catalog-price">14 800 руб.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="catalog-item">
+            <figure>
+              <img src="files/catalog_abrau-durso.jpg" alt="Прогулка в Абрау-Дюрсо">
+              <figcaption>
+                <a class="catalog-link" href="#">Морская прогулка в Абрау-Дюрсо</a>
+                <p class="catalog-description">Маршрут: Сочи-Абрау-Дюрсо<br> Продолжительность: 11 ч. 0 мин.</p>
+                <p class="catalog-price">14 800 руб.</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <button class="catalog-btn" type="button">Больше круизов</button>
+      </section>
+    </main>
 
     <script src="js/show-hide-menu.js"></script>
   </body>
