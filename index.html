@@ -9,62 +9,64 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="navigation">
-        <button class="navigation-btn" id="btn-toggle">
-          <span class="visually-hidden" id="btn-text">Открыть главное меню</span>
-        </button>
-        <ul class="navigation-list list-hidden" id="main-menu">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Популярные маршруты</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Расписание рейсов</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Забронированные рейсы</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход для партнеров</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О компании</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <button class="login" type="button">Личный кабинет</button>
-          </li>
-          <li class="navigation-item">
-            <select class="currency">
-              <option value="ruble">Рубль</option>
-              <option value="dollar">Доллар</option>
-              <option value="euro">Евро</option>
-            </select>
-          </li>
-          <li class="navigation-item">
-            <select class="lang">
-              <option value="ru">Ru</option>
-              <option value="eng">Eng</option>
-            </select>
-          </li>
-          <li class="navigation-item navigation-support">
-            <b>8 800 500-61-05</b><br>
-            <span>Круглосуточная поддержка</span>
-          </li>
-        </ul>
-      </nav>
-      <a class="logo" href="index.html">
-        <img src="files/logo.svg" width="88" height="88" alt="Логотип компании">
-      </a>
-      <h1>Морские прогулки<br><span class="black-sea">по чёрному морю</span></h1>
-      <a class="cruise-select" href="#">Выбрать круиз</a>
-      <div class="line"></div>
-    </header>
-
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="navigation">
+          <button class="navigation-btn" id="btn-toggle">
+            <span class="visually-hidden" id="btn-text">Открыть главное меню</span>
+          </button>
+          <ul class="navigation-list list-hidden menu" id="main-menu">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Популярные маршруты</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Расписание рейсов</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Забронированные рейсы</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Вход для партнеров</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О компании</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <button class="login" type="button">Личный кабинет</button>
+            </li>
+            <li class="navigation-item">
+              <select class="currency ruble" onchange="this.className = this.options[this.selectedIndex].className">
+                <option class="ruble" value="ruble">Рубль</option>
+                <option class="dollar" value="dollar">Доллар</option>
+                <option class="euro" value="euro">Евро</option>
+              </select>
+            </li>
+            <li class="navigation-item">
+              <select class="lang">
+                <option value="ru">Ru</option>
+                <option value="eng">Eng</option>
+              </select>
+            </li>
+            <li class="navigation-item navigation-support">
+              <a href="tel:+78005006105"><b>8 800 500-61-05</b></a><br>
+              <span>Круглосуточная поддержка</span>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo" href="index.html">
+          <img src="files/logo.svg" width="88" height="88" alt="Логотип компании">
+        </a>
+        <h1 class="page-title">Морские прогулки</h1>
+        <p class="page-title-text">по чёрному морю</p>
+        <a class="cruise-select" href="#">Выбрать круиз</a>
+        <div class="line"></div>
+      </header>
+    </div>
     <main class="container">
       <section class="catalog">
         <h2>Каталог круизов</h2>
