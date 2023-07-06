@@ -1,12 +1,228 @@
 @charset "utf-8";
 
-.list-hidden {
-  display: none;
+/* Global styles */
+
+/* Variables */
+
+:root {
+  --font-raleway: 400 14px/24px "Raleway", sans-serif;
+  --font-roboto_slab: 400 18px/48px "Roboto Slab", serif;
+  --color-basic: #0d3351;
+  --color-second: #00a2dd;
+  --color-menu: #fff;
+  --color-bg: #f3f3f3;
 }
 
-/*
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
+* {
+  margin: 0;
+  padding: 0;
 }
-*/
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1675px;
+  margin: 0 auto;
+}
+
+/* Desktop version */
+
+@media (min-width: 1140px) {
+  
+  .page-header,
+  .container,
+  .page-footer {
+    min-width: 1140px;
+    max-width: 1675px;
+  }
+
+  .wrapper {
+    width: 100%;
+    background: url(../img/bg_sochi.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  /* Header */
+
+  .page-header {
+    position: relative;
+    width: 1140px;
+    margin: auto;
+    padding-top: 34px;
+    padding-bottom: 178px;
+  }
+
+  .navigation {
+    position: relative;
+    /* width: 1140px; */
+    margin-bottom: 34px;
+  }
+
+  .navigation,
+  .navigation-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation-list {
+    list-style: none;
+  }
+
+  .list-hidden {
+    display: none;
+  }
+
+  .navigation-btn {
+    width: 22px;
+    height: 16px;
+    background: url(../img/burger_menu.svg) no-repeat;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navigation-btn .visually-hidden {
+    position: fixed;
+    transform: scale(0);
+  }
+
+  .menu {
+    position: absolute;
+    top: 27px;
+    left: 0;
+    flex-direction: column;
+    width: 420px;
+    height: 413px;
+    box-sizing: border-box;
+    padding: 73px 45px 83px;
+    background: var(--color-basic);
+  }
+
+  .menu .navigation-link {
+    text-decoration: none;
+    color: var(--color-menu);
+    font: var(--font-roboto_slab);
+    line-height: 1;
+  }
+
+  .navigation-user {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+  }
+
+  .login,
+  .currency,
+  .ruble,
+  .dollar,
+  .euro,
+  .lang,
+  .navigation-support {
+    position: relative;
+    font: var(--font-raleway);
+    color: var(--color-basic);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+  }
+
+  .login {
+    padding: 0 12px 0 14px;
+    background: url(../img/user.svg) 0 5px no-repeat,
+                url(../img/arrow.svg) 128px 10px no-repeat;
+  }
+
+  .ruble,
+  .dollar,
+  .euro {
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+  }
+
+  .ruble {
+    background: url(../img/ruble.svg) 3px 5px no-repeat,
+                url(../img/arrow.svg) 64px 10px no-repeat;
+  }
+
+  .dollar {
+    background: url(../img/dollar.svg) 3px 6px no-repeat,
+                url(../img/arrow.svg) 67px 10px no-repeat;
+  }
+
+  .euro {
+    background: url(../img/euro.svg) 3px 6px no-repeat,
+                url(../img/arrow.svg) 64px 10px no-repeat;
+  }
+
+  .lang {
+    padding-right: 14px;
+    background: url(../img/arrow.svg) 29px 10px no-repeat;
+  }
+
+  .navigation-support {
+    line-height: 1.2;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    color: var(--color-basic);
+  }
+
+  .navigation-support span {
+    font-size: 10px;
+  }
+
+  .logo {
+    display: block;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  .page-title,
+  .page-title-text {
+    font: var(--font-roboto_slab);
+    color: var(--color-basic);
+    text-align: center;
+  }
+
+  .page-title {
+    margin-bottom: 35px;
+    font-size: 36px;
+  }
+
+  .page-title-text {
+    margin-bottom: 58px;
+    font-size: 100px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .cruise-select {
+    display: block;
+    width: 202px;
+    height: 48px;
+    margin: 0 auto 18px;
+    padding: 17px 50px;
+    box-sizing: border-box;
+    font: var(--font-raleway);
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--color-second);
+  }
+
+  .line {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -96px;
+    width: 64px;
+    height: 288px;
+    margin: auto;
+    background: url(../img/snake_line.svg) center center no-repeat;
+  }
+
+}
