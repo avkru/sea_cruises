@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-  <html lang="ru">
+  <html lang="zxx">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Морские круизы</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -67,6 +68,7 @@
         <div class="line"></div>
       </header>
     </div>
+
     <main class="container">
       <section class="catalog">
         <h2 id="catalog">Каталог круизов</h2>
@@ -76,36 +78,36 @@
           <option value="popular">Сортировать по популярности</option>
         </select>
         <ul class="catalog-list">
-          <li class="catalog-item">
+          <li data-modal-open="modal-1" class="catalog-item">
             <figure>
               <img src="files/catalog_anapa.jpg" alt="Круиз в Анапу">
               <div class="promo">Хит продаж</div>
               <figcaption>
-                <a class="catalog-link" href="#">Морской круиз в Анапу</a>
+                <a class="catalog-link">Морской круиз в Анапу</a>
                 <p class="catalog-description">
                   <span>Маршрут:</span> Сочи-Лазаревское-Геленджик-Анапа<br> <span>Продолжительность:</span> 10 ч. 0 мин.</p>
                 <p class="catalog-price">49 000 руб.</p>
               </figcaption>
             </figure>
           </li>
-          <li class="catalog-item">
+          <li data-modal-open="modal-2" class="catalog-item">
             <figure>
               <img src="files/catalog_sochi.jpg" alt="Прогулка Сочи-Адлер-Сочи">
               <div class="promo">Акция</div>
               <figcaption>
-                <a class="catalog-link" href="#">Обзорная морская прогулка с экскурсией</a>
+                <a class="catalog-link">Обзорная морская прогулка с экскурсией</a>
                 <p class="catalog-description">
                   <span>Маршрут:</span> Сочи-Адлер-Сочи (без высадки)<br> <span>Продолжительность:</span> 1 ч. 0 мин.</p>
                 <p class="catalog-price">5 000 руб. <del>15000 руб.</del></p>
               </figcaption>
             </figure>
           </li>
-          <li class="catalog-item">
+          <li data-modal-open="modal-3" class="catalog-item">
             <figure>
               <img src="files/catalog_gelendzhik.jpg" alt="Прогулка в Геленджик">
               <div class="promo">Скидка 10%</div>
               <figcaption>
-                <a class="catalog-link" href="#">Морская прогулка в Геленджик</a>
+                <a class="catalog-link">Морская прогулка в Геленджик</a>
                 <p class="catalog-description">
                   <span>Маршрут:</span> Сочи-Туапсе-Геленджик<br>
                   <span>Продолжительность:</span> 12 ч. 30 мин.</p>
@@ -113,11 +115,11 @@
               </figcaption>
             </figure>
           </li>
-          <li class="catalog-item">
+          <li data-modal-open="modal-4" class="catalog-item">
             <figure>
               <img src="files/catalog_novorossiysk.jpg" alt="Круиз в Новороссийск">
               <figcaption>
-                <a class="catalog-link" href="#">Морской круиз в Новороссийск</a>
+                <a class="catalog-link">Морской круиз в Новороссийск</a>
                 <p class="catalog-description">
                   <span>Маршрут:</span> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи<br>
                   <span>Продолжительность:</span> 13 ч. 0 мин.</p>
@@ -125,11 +127,11 @@
               </figcaption>
             </figure>
           </li>
-          <li class="catalog-item">
+          <li data-modal-open="modal-5" class="catalog-item">
             <figure>
               <img src="files/catalog_abrau-durso.jpg" alt="Прогулка в Абрау-Дюрсо">
               <figcaption>
-                <a class="catalog-link" href="#">Морская прогулка в Абрау-Дюрсо</a>
+                <a class="catalog-link">Морская прогулка в Абрау-Дюрсо</a>
                 <p class="catalog-description">
                   <span>Маршрут:</span> Сочи-Абрау-Дюрсо<br>
                   <span>Продолжительность:</span> 11 ч. 0 мин.</p>
@@ -190,6 +192,275 @@
       </section>
     </footer>
 
+    <section id="modal-1" data-modal class="fade-block hidden">
+      <div class="modal-window">
+        <div class="card">
+          <button data-modal-close class="btn" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+
+          <div class="wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="files/slider/anapa-1_mini.jpg">
+                  <img src="files/slider/anapa-1.jpg" alt="Фото Анапы">
+                </li>
+                <li data-thumb="files/slider/anapa-2_mini.jpg">
+                  <img src="files/slider/anapa-2.jpg" alt="Фото Анапы">
+                </li>
+                <li data-thumb="files/slider/anapa-3_mini.jpg">
+                  <img src="files/slider/anapa-3.jpg" alt="Фото Анапы">
+                </li>
+                <li data-thumb="files/slider/anapa-4_mini.jpg">
+                  <img src="files/slider/anapa-4.jpg" alt="Фото Анапы">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h2 class="card-title">Морской круиз в Анапу</h2>
+            <p class="card-description">
+              <span>Маршрут:</span> Сочи-Лазаревское-Геленджик-Анапа<br>
+              <span>Продолжительность:</span> 10 ч. 0 мин.
+            </p>
+            <p class="card-description">
+              <span>Расписание:</span><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>  
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet.
+            </p>
+            <p class="card-price">49 000 руб.</p>
+            <button class="card-btn" type="button">Бронирование</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-2" data-modal class="fade-block hidden">
+      <div class="modal-window">
+        <div class="card">
+          <button data-modal-close class="btn" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+
+          <div class="wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="files/slider/sochi-1_mini.jpg">
+                  <img src="files/slider/sochi-1.jpg" alt="Фото Сочи">
+                </li>
+                <li data-thumb="files/slider/sochi-2_mini.jpg">
+                  <img src="files/slider/sochi-2.jpg" alt="Фото Сочи">
+                </li>
+                <li data-thumb="files/slider/sochi-3_mini.jpg">
+                  <img src="files/slider/sochi-3.jpg" alt="Фото Сочи">
+                </li>
+                <li data-thumb="files/slider/sochi-4_mini.jpg">
+                  <img src="files/slider/sochi-4.jpg" alt="Фото Сочи">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h2 class="card-title">Обзорная морская прогулка с экскурсией</h2>
+            <p class="card-description">
+              <span>Маршрут:</span> Сочи-Адлер-Сочи (без высадки)<br>
+              <span>Продолжительность:</span> 1 ч. 0 мин.
+            </p>
+            <p class="card-description">
+              <span>Расписание:</span><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>  
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+            </p>
+            <p class="card-price">5 000 руб. <del>15000 руб.</del></p>
+            <button class="card-btn" type="button">Бронирование</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-3" data-modal class="fade-block hidden">
+      <div class="modal-window">
+        <div class="card">
+          <button data-modal-close class="btn" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+
+          <div class="wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="files/slider/gelendzhik-1_mini.jpg">
+                  <img src="files/slider/gelendzhik-1.jpg" alt="Фото Геленджика">
+                </li>
+                <li data-thumb="files/slider/gelendzhik-2_mini.jpg">
+                  <img src="files/slider/gelendzhik-2.jpg" alt="Фото Геленджика">
+                </li>
+                <li data-thumb="files/slider/gelendzhik-3_mini.jpg">
+                  <img src="files/slider/gelendzhik-3.jpg" alt="Фото Геленджика">
+                </li>
+                <li data-thumb="files/slider/gelendzhik-4_mini.jpg">
+                  <img src="files/slider/gelendzhik-4.jpg" alt="Фото Геленджика">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h2 class="card-title">Морская прогулка в Геленджик</h2>
+            <p class="card-description">
+              <span>Маршрут:</span> Сочи-Туапсе-Геленджик<br>
+              <span>Продолжительность:</span> 12 ч. 30 мин.
+            </p>
+            <p class="card-description">
+              <span>Расписание:</span><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>  
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet.
+            </p>
+            <p class="card-price">7 000 руб. <del>10000 руб.</del></p>
+            <button class="card-btn" type="button">Бронирование</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-4" data-modal class="fade-block hidden">
+      <div class="modal-window">
+        <div class="card">
+          <button data-modal-close class="btn" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+
+          <div class="wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="files/slider/novorossiysk-1_mini.jpg">
+                  <img src="files/slider/novorossiysk-1.jpg" alt="Фото Новороссийска">
+                </li>
+                <li data-thumb="files/slider/novorossiysk-2_mini.jpg">
+                  <img src="files/slider/novorossiysk-2.jpg" alt="Фото Новороссийска">
+                </li>
+                <li data-thumb="files/slider/novorossiysk-3_mini.jpg">
+                  <img src="files/slider/novorossiysk-3.jpg" alt="Фото Новороссийска">
+                </li>
+                <li data-thumb="files/slider/novorossiysk-4_mini.jpg">
+                  <img src="files/slider/novorossiysk-4.jpg" alt="Фото Новороссийска">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h2 class="card-title">Морской круиз в Новороссийск</h2>
+            <p class="card-description">
+              <span>Маршрут:</span> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи<br>
+              <span>Продолжительность:</span> 13 ч. 0 мин.
+            </p>
+            <p class="card-description">
+              <span>Расписание:</span><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>  
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing.<br>
+              Lorem ipsum dolor sit amet consectetur.<br>
+              Lorem ipsum dolor sit amet.
+            </p>
+            <p class="card-price">14 800 руб.</p>
+            <button class="card-btn" type="button">Бронирование</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-5" data-modal class="fade-block hidden">
+      <div class="modal-window">
+        <div class="card">
+          <button data-modal-close class="btn" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+
+          <div class="wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="files/slider/abrau-durso-1_mini.jpg">
+                  <img src="files/slider/abrau-durso-1.jpg" alt="Фото Абрау-Дюрсо">
+                </li>
+                <li data-thumb="files/slider/abrau-durso-2_mini.jpg">
+                  <img src="files/slider/abrau-durso-2.jpg" alt="Фото Абрау-Дюрсо">
+                </li>
+                <li data-thumb="files/slider/abrau-durso-3_mini.jpg">
+                  <img src="files/slider/abrau-durso-3.jpg" alt="Фото Абрау-Дюрсо">
+                </li>
+                <li data-thumb="files/slider/abrau-durso-4_mini.jpg">
+                  <img src="files/slider/abrau-durso-4.jpg" alt="Фото Абрау-Дюрсо">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h2 class="card-title">Морская прогулка в Абрау-Дюрсо</h2>
+            <p class="card-description">
+              <span>Маршрут:</span> Сочи - Абрау-Дюрсо <br>
+              <span>Продолжительность:</span> 11 ч. 0 мин.
+            </p>
+            <p class="card-description">
+              <span>Расписание:</span><br>
+              Отправление из Сочи: ежедневно в 10:00, 11:40,<br>
+              13:20, 15:00, 16:40<br>
+              Отправление из Абрау-Дюрсо: ежедневно<br>
+              в 12:25, 14:05, 15:45, 17:25, 19:05<br>  
+              Продолжительность: 11 часов 0 мин., из которых<br>
+              10 часов - морская прогулка (туда и обратно), от<br>
+              1 часа 30 мин. - свободное время в Ласточкином<br>
+              гнезде<br>
+              Причал отправления/прибытия: набережная<br>
+              Ленина, причал №8, теплоход "Азов"
+            </p>
+            <p class="card-price">14 800 руб.</p>
+            <button class="card-btn" type="button">Бронирование</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="js/show-hide-menu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/jquery.flexslider_mod.js"></script>
+    <script>
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "fade",
+          controlNav: "thumbnails"
+        });
+      });
+    </script>
   </body>
 </html>
