@@ -42,7 +42,7 @@ body {
 
 .wrapper {
   width: 100%;
-  background: url(../img/bg_sochi.jpg) no-repeat;
+  background: url(../img/bg_sochi.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -502,7 +502,8 @@ body {
     font-weight: 700;
   }
 
-  .tablet {
+  .tablet,
+  .mobile {
     display: none;
   }
 
@@ -533,10 +534,6 @@ body {
   
   /* Header */
 
-  .wrapper {
-    background-position: center center;
-  }
-
   .page-header,
   .page-footer {
     min-width: 720px;
@@ -545,9 +542,6 @@ body {
 
   .page-header {
     width: 720px;
-  }
-
-  .page-header {
     padding-bottom: 208px;
   }
 
@@ -646,4 +640,159 @@ body {
   .modal-window .card-price del {
     margin-left: -6px;
   }
+}
+
+/* Mobile version */
+
+@media (min-width: 320px) and (max-width: 719px) {
+
+  /* Header */
+
+  .page-header,
+  .page-footer {
+    min-width: 320px;
+    max-width: 720px;
+  }
+
+  .page-header {
+    width: 100%;
+    padding: 27px 0 208px;
+  }
+
+  .navigation {
+    position: absolute;
+    left: 15px;
+  }
+
+  .menu {
+    width: 285px;
+    height: 330px;
+    box-sizing: border-box;
+    padding: 50px 25px;
+  }
+
+  .navigation-user {
+    display: none;
+  }
+
+ .logo {
+  margin-bottom: 15px;
+ }
+
+  .page-title {
+    margin-bottom: 26px;
+    font-size: 20px;
+  }
+
+  .page-title-text {
+    margin-bottom: 44px;
+    font-size: 50px;
+  }
+
+  .cruise-select {
+    margin-bottom: 24px;
+  }
+
+  .line {
+    bottom: -26px;
+    height: 236px;
+  }
+
+  /* Main */
+
+  .container {
+    padding-top: 55px;
+    padding-bottom: 31px;
+  }
+
+  .catalog {
+    width: 290px;
+  }
+
+  .catalog h2 {
+    font-size: 20px;
+  }
+
+  .catalog-list {
+    grid-template: repeat(4, 1fr) / 1fr;
+    gap: 20px;
+  }
+
+  .catalog-item {
+    height: 464px;
+  }
+
+  .catalog-item:first-child {
+    grid-column: 1 / 1;
+  }
+
+  .catalog-item:nth-child(2) {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+  }
+
+  .catalog-item:nth-child(3) {
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+  }
+
+  .catalog-item:last-child {
+    display: none;
+  }
+
+  figcaption {
+    padding: 30px 27px 30px 22px;
+  }
+
+  figure img {
+    width: 290px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .promo {
+    right: 23px;
+  }
+
+  .catalog-link {
+    line-height: 1;
+  }
+
+  .catalog-price del {
+    margin-left: 0;
+  }
+
+  /* Footer */
+
+  .page-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 29px;
+    padding-bottom: 42px;
+    text-align: center;
+  }
+
+  .footer-contacts {
+    display: none;
+  }
+
+  .footer-social {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Modal */
+
+  .fade-block,
+  .card {
+    display: none;
+  }
+
 }
